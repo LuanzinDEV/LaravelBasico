@@ -1,0 +1,25 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\API\UsuarioController;
+
+/*
+|--------------------------------------------------------------------------
+| API Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register API routes for your application. These
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "api" middleware group. Make something great!
+|
+*/
+
+Route::prefix('v1')->group(function(){
+    Route::get('lista', function(){
+        $usuarioModel = App\Models\UsuarioModel::listar(10);
+        return $usuarioModel;
+    });
+
+    Route::post('/cadastra', [UsuarioController::class, 'salvar']);
+
+});

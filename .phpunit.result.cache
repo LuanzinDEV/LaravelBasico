@@ -1,0 +1,1 @@
+{"version":1,"defects":{"Tests\\Unit\\UsuarioModelTest::testCadastrar":8,"Tests\\Unit\\UsuarioModelTest::testListar":8},"times":{"Tests\\Unit\\UsuarioModelTest::test_example":0.004,"Tests\\Unit\\UsuarioModelTest::testCadastrar":0.144,"Tests\\Unit\\UsuarioModelTest::testListar":0.019}}
